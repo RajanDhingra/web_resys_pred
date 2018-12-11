@@ -11,7 +11,7 @@ train_data_buy<-train_data_filtered[train_data_filtered$Session_ID %in% session_
 
 head(train_data_buy,n = 8)
 
-#Create a new column with Item_ID and Category
+##Create a new column with Item_ID and Category
 
 train_data_buy["Item_Cat"]<-paste(train_data_buy$Item_ID,"-",train_data_buy$Category)
 
